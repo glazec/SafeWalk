@@ -102,4 +102,5 @@ class TicketConfirm(generics.CreateAPIView):
         user = get_object_or_404(User,username = request.user)
         ticket = Ticket.objects.filter(uid=request.POST.get("uuid"))[0]
         ticket.receiver=user
+        ticket.save()
         return JsonResponse({'last_name':user.last_name,"first_name":user.first_name})
