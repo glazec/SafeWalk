@@ -41,7 +41,7 @@ get_avatar/
 {avatar}
 
 creat_ticket/
-time{sched}
+time{sched} //time format YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] 
 {uuid}
 
 
