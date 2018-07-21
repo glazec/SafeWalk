@@ -47,3 +47,7 @@ time{sched} //time format YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ]
 ticket_confirm/
 {uuid}
 {first_name,last_name}
+
+ticket_viewset/
+{}
+{json data}
