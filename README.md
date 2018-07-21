@@ -44,5 +44,6 @@ creat_ticket/
 time{sched} //time format YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] 
 {uuid}
 
-
-
+ticket_confirm/
+{uuid}
+{first_name,last_name}
