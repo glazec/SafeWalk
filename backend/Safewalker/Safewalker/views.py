@@ -10,16 +10,20 @@ from ParentsChild.models import Profile
 from ParentsChild.models import Ticket
 # from ..ParentsChild.models import
 
+
 class Register(generics.CreateAPIView):
     permission_classes = (permissions.AllowAny,)
 
     def post(self,request,*args,**kwargs):
-        username = request.POST.get("username")
+        print(request)
+        usernam = request.data.get("user")
+        print("--------------------------------")
         password = request.POST.get("password")
-        user = User.objects.create_user(username=username,password=password)
+
+        user = User.objects.create_user(usernam,password=password)
         token = Token.objects.create(user=user)
-        user.first_name = request.POST.get("firstName")
-        user.last_name = request.POST.get("lastName")
+        user.first_name = request.data.get("firstName")
+        user.last_name = request.data.get("lastName")
         user.save()
         profile = Profile.objects.create(user=user)
         # return HttpResponse({'detail': ('User has been created with token :'+token.key)})
