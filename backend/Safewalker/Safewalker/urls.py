@@ -32,5 +32,6 @@ urlpatterns = [
     url(r'^upload_avatar/$', view=views.UploadAvatar.as_view()),
     url(r'^get_avatar/$', view=views.GetAvatar.as_view()),
     url(r'^create_ticket/$',view=views.CreateTicket.as_view()),
-    url(r'^ticket_confirm/$',view=views.TicketConfirm.as_view(),)
+    url(r'^ticket_confirm/$',view=views.TicketConfirm.as_view()),
+    url(r'^ticket_viewset/$',view=views.TicketViewSet),
 ]

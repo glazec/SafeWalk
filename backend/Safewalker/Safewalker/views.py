@@ -1,4 +1,5 @@
-from rest_framework import generics,permissions
+from rest_framework import generics,permissions,viewsets
+from ParentsChild.serialization import TicketSerializer
 from django.contrib.auth.models import User
 from rest_framework.authtoken.models import Token
 from django.http import HttpResponse
@@ -104,3 +105,7 @@ class TicketConfirm(generics.CreateAPIView):
         ticket.receiver=user
         ticket.save()
         return JsonResponse({'last_name':user.last_name,"first_name":user.first_name})
+
+class TicketViewSet(viewsets.ModelViewSet):
+    querryset= Ticket.objects.all()
+    serializer_class = TicketSerializer
