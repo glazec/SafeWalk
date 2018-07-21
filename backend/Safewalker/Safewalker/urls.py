@@ -21,8 +21,16 @@ from rest_framework.authtoken import views as vw
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("accounts/",include('django.contrib.auth.urls')),
+    # path("accounts/",include('django.contrib.auth.urls')),
     url(r"^register/$",view=views.Register.as_view()),
     url(r'^change_password/$',view=views.ChangePassword.as_view()),
     url(r'^login/$',view=vw.obtain_auth_token),
+    url(r'^upload_phonenum/$',view=views.UploadPhonenum.as_view()),
+    url(r'^get_phonenum/$',view=views.GetPhonenum.as_view()),
+    url(r'^upload_govrnid/$', view=views.UploadGovernid.as_view()),
+    url(r'^get_governid/$', view=views.GetGovernid.as_view()),
+    url(r'^upload_avatar/$', view=views.UploadAvatar.as_view()),
+    url(r'^get_avatar/$', view=views.GetAvatar.as_view()),
+    url(r'^create_ticket/$',view=views.CreateTicket.as_view()),
+    url(r'^ticket_confirm/$',view=views.TicketConfirm.as_view(),)
 ]
