@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.loginPage{
+    background-color: #3B3C41;
+}
+
+.login{
+    border-style: hidden;
+    background-color: #3B3C41;
+    border-bottom: 2px solid lightgrey;
+}
+
+.loginText{
+    color:white;
+}
+
+.loginText a{
+    color:white;
+}
+
+.loginField{
+    padding: 10px;
+}
+
+.loginButton{
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    width:90px;
+    height:40px;
+    background-color: #3B3C41;
+    border: 2px solid white;
+}
+
+#container {
+    width:500px; 
+    height: 890px; 
+} 
+
+#panel{
+    z-index: 100;
+    width:500px; 
+    height: 890px; 
+}
+
+nav{
+    height:60px;
+    background-color: gray;
+}
+
+
+
+#route{
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    z-index: 5;
+    width: 256px;
+    height: 80px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 15px;
+    background-color: #3b3c41;
+}
+
+#txt1{
+    position: absolute;
+    left:50px;
+    top:10px;
+    z-index: 20;
+    width: 200px;
+    height: 23px;
+    color: #ffffff;
+    font-family: "Helvetica Neue";
+    font-size: 17px;
+}
+
+#txt2{
+    position: absolute;
+    left:50px;
+    top:50px;
+    z-index: 20;
+    width: 200px;
+    height: 23px;
+    color: #ffffff;
+    font-family: "Helvetica Neue";
+    font-size: 17px;
+}
+
+#status{
+    border-radius: 15px;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    z-index: 10;
+    width: 72px;
+    height: 82px;
+    background-color: #3b3c41;
+}
+
+#txt-hr2{
+    position:absolute;
+    top: 35px; 
+    margin:5px;
+    padding: 0;
+    width: 64px;
+    height: 0;
+    border: 1px solid #707070;
+}
+
+#status p{
+    color:white;
+    position:absolute;
+    left:20px;
+}
+
+#status #now{
+    top:15px;
+}
+
+#status #book{
+    top:45px;
+}
+
+#round1{
+    position:absolute;
+    top: 10px; 
+    left:20px;
+    border-radius:10px;
+    z-index: 20;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ffffff;
+    background-color: #6584bf;
+}
+
+#txt-hr{
+    position:absolute;
+    top: 35px; 
+    margin:5px;
+    padding: 0;
+    width: 240px;
+    height: 0;
+    border: 1px solid #707070;
+}
+
+#round2{
+    position:absolute;
+    top: 50px; 
+    left:20px;
+    border-radius:10px;
+    z-index: 20;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ffffff;
+    background-color: #168b75;
+}
